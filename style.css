@@ -29,7 +29,8 @@ input[type="text"] , input[type="password"], input[type="submit"], input[type="s
 
 .main{
     margin-right: auto;
-    margin-left: auto;
+	margin-left: auto;
+	background-image: url(assets/img/b1.jpg);
 }
 
 .header{
@@ -37,10 +38,10 @@ input[type="text"] , input[type="password"], input[type="submit"], input[type="s
 }
 
 .overlay{
-	background-color: yellow;
+	background-color:rgb(78, 181, 199);
 	text-align: center;
 	margin-bottom: 0;
-	box-shadow:inset 0 0  20px 5px #d4d409;
+	box-shadow:inset 0 0  20px 5px #2e69d8;
 
 }
 
@@ -60,28 +61,33 @@ input[type="text"] , input[type="password"], input[type="submit"], input[type="s
 
 .oit{
 	text-transform: uppercase;
-	background-color: orange;
+	background-color: rgb(78, 181, 199);
 	width: 20%;
 	font-size: 50px;
 	float: left;
 	text-align: center;
 	padding-top: 15px;
 	height: 115px;
+	/* border-top: solid blue;
+	border-left: solid blue;
+	border-bottom: solid blue; */
 	}
 
 .vps {
 	width: 63%;
 	
-	background-color: yellow;
+	background-color: rgba(78, 181, 199, 0.7);
+	box-shadow: inset 0 0 20px 20px  rgb(78, 181, 199);
 	color: orange;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: 25px;
 	text-align: center;
 	float: left;
 	letter-spacing: 0.1em;
-	padding-top: 35px;
+	padding-top: 10px;
 	height: 115px;	
-	border: solid orange;
+	/* border: solid blue; */
+	text-shadow: #8a7e18 2px 3px 1px;
 
 }
 
@@ -92,9 +98,9 @@ input[type="text"] , input[type="password"], input[type="submit"], input[type="s
 	background-image: url(assets/img/logo.jpg);
 	padding:0;
 	height: 115px;
-	border-right: solid orange;
-	border-top:solid orange;
-	border-bottom: solid orange;
+	/* border-right: solid blue;
+	border-top:solid blue;
+	border-bottom: solid blue; */
 
 
 }
@@ -102,10 +108,12 @@ input[type="text"] , input[type="password"], input[type="submit"], input[type="s
 ul.menu{
 	float: right;
 	list-style-type: none;
-	background-color: yellow;
+	background-color:  rgba(78, 181, 199, 0.4);
+	box-shadow: inset 0 0 5px 3px  rgb(78, 181, 199, 0.4);
 	width: 100%;
 	height: 30px;
 	font: 20px arial, sans-serif;
+	color: white;
 
 }
 
@@ -123,10 +131,15 @@ ul.menu li a:hover{
 }
 
 .menu{
-	border:solid 1px orange;
+	border:solid 1px blue;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
+
+.menu a{
+	color: white;
+}
+
 .site_content{
 	width: 880px;
 	margin: 80px auto 0 auto;
@@ -169,14 +182,18 @@ ul.menu li a:hover{
 	height: 200px;
 	width: 200px;
 	padding-top: 80px;
-	background: yellow;
-	box-shadow: inset 0 0 30px 30px #f5de10;
+	background: rgba(78, 181, 199, 0.4);
+	/* opacity: .7; */
+	box-shadow: inset 0 0 20px 20px #7fd6e6;
 	font-size: 20px;
 	color: black;
 	border: solid 1px black;
 	border-radius: 5%;
+	margin-top: 50px;
 
 }
+
+
 
 .date{
 	font-weight: bold;
@@ -201,9 +218,10 @@ ul.menu li a:hover{
 	border-radius: 5%;
 }
 
+
 /* при наведении курсора на блок */
 .menu_block1:hover{
-	background-color: orangered;
+	background-color: #7fd6e6;
 	/* border-bottom:solid 5px  orangered;
 	border-right: solid 5px orangered; */
 
@@ -211,7 +229,7 @@ ul.menu li a:hover{
 }
 
 .menu_block2:hover{
-	background-color: orangered;
+	background-color: rgb(243, 161, 54);
 }
 
 
