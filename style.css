@@ -190,19 +190,20 @@ ul.menu li a:hover{
 	float:left;
 	height: 200px;
 	width: 200px;
-	padding-top: 80px;
 	background: rgba(78, 181, 199, 0.4);
-	/* opacity: .7; */
 	box-shadow: inset 0 0 20px 20px #7fd6e6;
 	font-size: 20px;
 	color: black;
 	border: solid 1px black;
 	border-radius: 5%;
 	margin-top: 50px;
-
+	display: table;
 }
 
-
+.menu_block1 h2{
+	display: table-cell;
+	vertical-align: middle;
+}
 
 .date{
 	font-weight: bold;
@@ -218,15 +219,19 @@ ul.menu li a:hover{
 	float:left;
 	height: 150px;
 	width: 150px;
-	padding-top: 60px;
 	background-color: rgba(78, 181, 199, 0.7);
 	box-shadow: inset 0 0 10px 10px  rgb(78, 181, 199);
 	font-size: 20px;
 	color: black;
 	border: solid 1px black;
 	border-radius: 5%;
+	display: table;
 }
 
+.menu_block2 h2{
+	display: table-cell;
+	vertical-align: middle;
+}
 
 /* при наведении курсора на блок */
 .menu_block1:hover{
@@ -300,10 +305,17 @@ img{
 	height: 250px;
 }
 
+.table_rec{
+	border-bottom: solid 1px black;
+	border-right: solid 1px black;
+}
 
-
-
-
+.table_cap{
+	border: solid 1px black;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
 .footer{
 	width:100%;
 	height: 90px;
