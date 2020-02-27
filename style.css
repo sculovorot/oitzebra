@@ -120,7 +120,7 @@ ul.menu{
 
 ul.menu li{
 	float:left;
-	margin: 2px 60px 5px 5px;
+	margin: 2px 35px 5px 5px;
 }
 
 ul.menu li.selected a{
@@ -165,7 +165,7 @@ ul.menu li a:hover{
 	color: white;
 }
 
-. sitebar a{
+.sitebar a{
 	color:white;
 }
 
