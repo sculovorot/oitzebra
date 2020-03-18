@@ -251,10 +251,12 @@ ul.menu li a:hover{
 /* скрываем чекбоксы и блоки с содержанием */
 .list_info{
 	display:none;
+	
 }
 
 .list_info + label ~ div {
 	display:none;
+	
 }
 
 /* оформляем текст label */
@@ -270,6 +272,7 @@ ul.menu li a:hover{
 	height: 50px;
 	width: 500px;
 	font-size: 25px;
+	
 }
 
 /* вид текста label при активном переключателе */
@@ -293,6 +296,11 @@ ul.menu li a:hover{
 	font-size: 15px;
 	text-indent: 20px;
 }
+
+.list_bar a{
+	color: red;
+}
+
 
 /* Изображение для инструкций */
 img{
