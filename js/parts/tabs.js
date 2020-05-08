@@ -1,4 +1,6 @@
 
+//tabs main page
+
     let tab = document.querySelectorAll('.info-header-tab'),
         info = document.querySelector('.info-header'),
         tabContent = document.querySelectorAll('.site_content'),
@@ -9,8 +11,10 @@
             'Техника',
             'Программы',
             'Контакты'
-        ];
-        
+        ],
+        ikon = document.querySelector('.site_content'),
+        tabIkon = document.querySelectorAll('.click-me');
+             
     function hideTabContent(a = 1) {
          for (let i = a; i < tabContent.length; i++) {
              tabContent[i].classList.remove('show');
@@ -44,5 +48,24 @@
             }
         }
     });
+
+    ikon.addEventListener('click', function(event) {
+        let target = event.target;
+        if (target && target.classList.contains('click-me')) {
+            for (i=0; i<tabIkon.length; i++) {
+                if (target == tabIkon[i]) {
+                    hideTabContent(0);
+                    showTabContent(i+1);
+                    changeZag(i);
+                    break;                   
+                } 
+            }
+        }            
+    });
+    
+
+
+
+
 
 
