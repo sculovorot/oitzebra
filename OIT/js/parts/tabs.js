@@ -13,8 +13,9 @@
             'Контакты'
         ],
         ikon = document.querySelector('.site_content'),
-        tabIkon = document.querySelectorAll('.click-me');
-             
+        tabIkon = document.querySelectorAll('.click-me'),
+        tabIkonTabs = document.querySelectorAll('.click-me-tab');
+          
     function hideTabContent(a = 1) {
          for (let i = a; i < tabContent.length; i++) {
              tabContent[i].classList.remove('show');
@@ -49,6 +50,10 @@
         }
     });
 
+    function changeZagIkon(d) {
+        zag.innerHTML=(text[d]);
+    }
+
     ikon.addEventListener('click', function(event) {
         let target = event.target;
         if (target && target.classList.contains('click-me')) {
@@ -56,12 +61,30 @@
                 if (target == tabIkon[i]) {
                     hideTabContent(0);
                     showTabContent(i+1);
-                    changeZag(i);
+                    changeZagIkon(i+1);
                     break;                   
                 } 
             }
         }            
     });
+    
+    let ikonShow = document.querySelector('.site_contaner');
+
+    ikonShow.addEventListener('click', function(event) {
+        let target = event.target;
+            
+        if (target && target.classList.contains('click-me-tab')){
+            for (i=0; i<tabIkonTabs.length; i++) {
+                if (target == tabIkonTabs[i]) {
+                    hideTabContent(0);
+                    showTabContent(i+5);
+                    break;
+                }
+            }
+        }
+    });
+
+
     
 
 
